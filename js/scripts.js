@@ -6,7 +6,7 @@ var sampleAnswer = "";
 var userInputMod = "";
 var ping = "ping";
 var pong = "pong";
-var pingpong = "pingpong";
+var pingpong = ping.concat(pong);
 var sampleAnswerNumber = parseInt(sampleAnswer);
 
 
@@ -19,13 +19,19 @@ var pingPongFunction = function (userInput) {
   //   array[i];
   // console.log(i);
   // }
-  if ((userInput % 3) === 0) {
+  if ((userInput % 15) === 0) {
     // userInput = userInput.toString();
-    userInputMod = userInput + ping;
+    userInputMod = userInput +pingpong;
     console.log(userInput);
   }
+  else if (userInput % 3 === 0) {
+    userInputMod = userInput + ping;
+  }
+  else if (userInput % 5 === 0) {
+    userInputMod = userInput + pong;
+  }
   else {
-    userInputMod
+    userInputMod = userInput;
   }
 
   return;
