@@ -1,14 +1,30 @@
 // backend logic
-var sampleArray = [1, 2, 3, 4, 5];
+var sampleArray = [];
 var allNumbers = "";
 var sampleAnswer = "";
 
 var userInputMod = "";
+var userInputModCount = "";
 var ping = "ping";
 var pong = "pong";
 var pingpong = ping.concat(pong);
 var sampleAnswerNumber = parseInt(sampleAnswer);
 
+var counter = function (userInput) {
+  userInputModCount = userInput;
+  // sampleArray = int numbers[5];
+  for (i =0; i <userInputModCount; i+=1) {
+    sampleArray[i] = i;
+    alert(sampleArray);
+    // userInputModCount = sampleArray[i]
+
+    console.log();
+  }
+  sampleArray=[];
+  // for (i= 0; i < userInputModCount; i +=) {
+  //   userInputModCount = userInputModCount.append(" "+userInputModCount);
+  //   <br>;
+  }
 
 
 var pingPongFunction = function (userInput) {
@@ -25,7 +41,8 @@ var pingPongFunction = function (userInput) {
     console.log(userInput);
   }
   else if (userInput % 3 === 0) {
-    userInputMod = userInput + ping;
+    userInputMod = ping;
+    // userInputMod = userInput + ping;
   }
   else if (userInput % 5 === 0) {
     userInputMod = userInput + pong;
@@ -36,9 +53,6 @@ var pingPongFunction = function (userInput) {
 
   return;
 }
-
-
-
 // frontend user interface
 $(document).ready(function(){
   $(".form-whole").submit(function(event) {
@@ -46,7 +60,9 @@ $(document).ready(function(){
     var userInput = parseInt($(".userNumber").val());
     // alert(userInput);
     pingPongFunction(userInput);
+    counter(userInput);
     $(".result").append("<li>" +userInputMod+ "</li>");
+    $(".loop").append(userInputModCount+"<br>");
 
   });
 });
