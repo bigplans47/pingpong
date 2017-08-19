@@ -12,7 +12,9 @@ _{The array elements change so 3 is updated to and outputted as ping, 5 to pong 
 
 {Just clone the repository and open the index.html page in a browser to use this}
 
+## Specifications
 
+_{This website has the following behaviors 1.Take numerical input from the user and display it as an output, make an array with elements from 1 to the inputted number}_
 
 ## Known Bugs
 
