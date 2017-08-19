@@ -3,7 +3,6 @@ var sampleArray = [];
 var sampleAnswer = "";
 var userInputModCount = "";
 var answerLook ="";
-var answerLookMod ="";
 var ping = "ping";
 var pong = "pong";
 var pingpong = ping.concat("-"+pong);
