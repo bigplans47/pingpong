@@ -14,7 +14,12 @@ _{The array elements change so 3 is updated to and outputted as ping, 5 to pong 
 
 ## Specifications
 
-_{This website has the following behaviors 1.Take numerical input from the user and display it as an output, make an array with elements from 1 to the inputted number}_
+_{This website has the following behaviors
+  1.Take numerical input from the user and display it as an output, made in a way that user can enter number repeatedly without refreshing the page.
+  2.Make an array with elements from 1 to the inputted number.
+  3.Take the array and with a loop search for elements divisible by (3 AND 5) with 0 remainder, overwrite that element and write ping-pong,
+  4. If step #3 above not possible see if the element will be divisible by 3 with 0 remainder and overwrite that element with string "ping",
+  5. If step #4 above not possible see if the element will be divisible by 5 with 0 remainder and overwrite that element with string "pong"}_
 
 ## Known Bugs
 
