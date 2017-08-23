@@ -1,0 +1,22 @@
+p.directions {
+  margin-top: 20px;
+  font-style: italic;
+}
+@media screen and (max-width: 700px) {
+  body {
+    background-color: gold;
+    color: purple;
+  }
+}
+/*.loop {
+  margin: 10px;
+}*/
+.well {
+  display: none;
+  margin: 10px;
+}
+.theResult {
+  margin-top: 10px;
+  display: none;
+  color: gray;
+}

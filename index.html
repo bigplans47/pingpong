@@ -10,14 +10,16 @@
   <body>
     <div class="container">
       <form class="form-whole">
-        <div class="form-part">
-          <p>Type a number here to play</p>
+        <div class="form-group">
+          <p class="directions">Type a number here to play</p>
           <label for="userNumber">Enter Number:</label>
-          <input class="userNumber" type="number" placeholder="enter number">
+          <input class="userNumber form-control" type="number" placeholder="enter number">
         </div>
         <button type="submit" name="button" class="btn btn-success">Submit Number</button>
       </form>
-      <div class="container loop">
+      <p class="theResult">Here is your result:</p>
+      <div class="container loop well">
+      </div>
       </div>
     </div>
   </body>

@@ -1,6 +1,5 @@
 // backend logic
 var sampleArray = [];
-var sampleAnswer = "";
 var userInputModCount = "";
 var answerLook ="";
 var ping = "ping";
@@ -13,21 +12,23 @@ var counter = function (userInput) {
     sampleArray[i] = i+1;
     if (sampleArray[i] % 3 ===0 && sampleArray[i] % 5 ===0) {
         sampleArray[i] = pingpong;
-    } else if (sampleArray[i] % 3 ===0) {
+  } else if (sampleArray[i] % 3 ===0) {
         sampleArray[i] = ping;
-    } else if (sampleArray[i] % 5 ===0) {
+  } else if (sampleArray[i] % 5 ===0) {
         sampleArray[i] = pong;
-    }
+  }
   }
   answerLook = sampleArray.toString();
     console.log();
-  }
+  };
   //logic for user interface
 $(document).ready(function(){
   $(".form-whole").submit(function(event) {
     event.preventDefault();
     var userInput = parseInt($(".userNumber").val());
     counter(userInput);
+    $(".theResult").show();
+    $(".well").show();
     $(".loop").prepend("<br>"+answerLook+"<br>");
   });
 });
