@@ -10,16 +10,25 @@ _{The array elements change so 3 is updated to and outputted as ping, 5 to pong 
 
 ## Setup/Installation Requirements
 
-{Just clone the repository and open the index.html page in a browser to use this}
+_{Just clone the repository and open the index.html page in a browser to use this}
 
 ## Specifications
 
-_{This website has the following behaviors
-  1.Take numerical input from the user and display it as an output, made in a way that user can enter number repeatedly without refreshing the page.
-  2.Make an array with elements from 1 to the inputted number.
-  3.Take the array and with a loop search for elements divisible by (3 AND 5) with 0 remainder, overwrite that element and write ping-pong,
-  4. If step #3 above not possible see if the element will be divisible by 3 with 0 remainder and overwrite that element with string "ping",
-  5. If step #4 above not possible see if the element will be divisible by 5 with 0 remainder and overwrite that element with string "pong"}_
+_{Behavior 1 (our program should handle):Taking a number from a user and returning a range from 1 to the users number
+  Input Example (When it receives):5
+  Output Example (It should return):1,2,3,4,5
+
+  Behavior 2 (our program should handle):A number that divides by 3 with no remainder is replaced with the word "ping"
+  Input Example (When it receives):7
+  Output Example (It should return):1,2,ping,4,5,ping,7
+
+  Behavior 3 (our program should handle):A number that divides by 5 with no remainder is replaced with the word "pong"
+  Input Example (When it receives):11
+  Output Example (It should return): 1,2,3,4,pong,6,7,8,9,pong,11
+
+  Behavior 4 (our program should handle):A number that divides by 15 with no remainder is replaced with the word "ping-pong"
+  Input Example (When it receives):31
+  Output Example (It should return):1,2,3,4,5,6,7,8,9,10,11,12,13,14,ping-pong,16,17,18,19,20,21,22,23,24,25,26,27,28,29,ping-pong,31}_
 
 ## Known Bugs
 
